@@ -1,0 +1,363 @@
+body {
+
+background: white;
+
+}
+
+.main-container {
+
+    background-color: #CFD7C7;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding-bottom: 3vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+/* top design ====================== */
+
+.title-container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+}
+
+.title-container h2 {
+    display: inline-block;
+    animation: move 5s infinite linear;
+}
+
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.title-container h2 {
+    font-family: monospace;
+    font-size: 3vw;
+    color: #40798C;
+    text-align: center;
+    background-color: white;
+    padding: 1vw;
+    margin-top: 3.5vw;
+    margin-left: -5px;
+}
+
+.subtitle-container {
+
+    background-color: white;
+    display: flex;
+    margin: auto;
+    margin-top: 1vw;
+    align-items: center;
+    width: 75%;
+    height: 10vw;
+    border-radius: 1.5vw;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.portrait {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+}
+
+.subtitle-text {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+.subtitle-text h3 {
+    font-family: monospace;
+    font-size: 1vw;
+    color: #D38FB6;
+    text-align: left;
+    line-height: 2;
+    margin-top: -0.3vw;
+}
+
+.subtitle-text h4 {
+    font-family: monospace;
+    font-size: 1vw;
+    color: white;
+    background-color: #ac3e54;
+    padding: 0.5vw;
+    text-align: left;
+    margin-top: 1vw;
+}
+
+/* landing ====================== */
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 3vw;
+    width: 80%;
+
+}
+
+.landing img {
+    width: 100%;
+}
+
+.landing p {
+    font-family: monospace;
+    font-size: 1vw;
+    color: #70A9A1;
+    background-color: white;
+    text-align: center;
+    margin-top: 3vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    animation: blinker 1.5s linear infinite;
+
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.landing p:hover {
+    animation: none;
+    background-color: white;
+    color: #70A9A1;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+/* assist section ====================== */
+
+.assist {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    background-color: white;
+    border-radius: 1.5vw;
+    width: 80%;
+    margin: 3vw auto;
+    margin-bottom: 0vw;
+
+}
+
+.assist p2 {
+    font-family: monospace;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #17183B;
+    display: flex;
+    justify-content: center;
+    margin: 2vw auto;
+}
+
+.assist p {
+    font-family: monospace;
+    font-size: 1vw;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    margin: 1vw 4vw;
+    color: #40798C;
+}
+
+
+.finder-container {
+    position: relative;
+    width: 80%;
+    margin: 2vw auto;
+}
+
+.finder-container select {
+    appearance: none;
+    width: 100%;
+    padding: 0.5vw;
+    border: 0px solid;
+    font-family: monospace;
+    font-size: 1vw;
+    font-weight: bold;
+    color: white;
+    background-color: #89aca8;
+    text-align: center;
+    outline: none;
+}
+
+.goto-button {
+    position: absolute;
+    left: 92%;
+    top: 45%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goto-button button {
+    font-family: monospace;
+    font-size: 2vw;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+.goto-button button:hover {
+    transform: scale(1.1);
+}
+
+
+/* park ====================== */
+
+.park {
+    height: auto;
+    background-color: #CFD7C7;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    padding: 3vw;
+    gap: 2vw;
+}
+
+/* park sections ====================== */
+
+.s1, .s2, .s3, .s4, .empty {
+    margin: auto;
+    height: 50vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+}
+
+.s1 .people {
+    position: absolute;
+    transform: translate(5vw, 5vw);
+}
+
+.s1 .bench {
+    position: absolute;
+    transform: translate(15vw, 20vw);
+}
+
+.s1 .tree {
+    position: absolute;
+    transform: translate(20vw, -30vw);
+}
+
+.s2 .tree {
+    position: absolute;
+    transform: translateY(30vw);
+}
+
+.s2 .burd-container {
+    position: absolute;
+    transform: translate(11vw, 34vw);
+}
+
+.s2 .swingset {
+    position: absolute;
+    transform: translate(20vw, 5vw);
+}
+
+
+.s3 .tree {
+    position: absolute;
+    transform: translate(20vw, 10vw);
+}
+
+.s3 .flowerpatch {
+    position: absolute;
+    transform: translate(5vw);
+}
+
+.s3 .playground {
+    position: absolute;
+    transform: translate(5vw, 40vw);
+}
+
+
+
+.s4 .fountain {
+    position: absolute;
+    transform: translate(17vw, 5vw);
+}
+
+.s4 .grassrock {
+    position: absolute;
+    transform: translate(5vw, 30vw);
+}
+
+
+/* park assets ====================== */
+
+.tree {
+    width: 25vw;
+    height: 25vw;
+}
+
+
+.burd {
+    width: 2vw;
+    height: 2vw;
+    opacity: 0.8;
+}
+
+.burd:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    transition: 0.5s ease;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='20'%3E%3Crect width='50' height='20' fill='white'/%3E%3Ctext x='0' y='15' font-family='monospace' font-size='12' font-weight='bold' fill='black' %3Ecollect%3C/text%3E%3C/svg%3E") 5 5, auto;
+}
+
+.swingset {
+    width: 25vw;
+    height: 25vw;
+}
+
+.flowerpatch {
+    width: 13vw;
+    height: 13vw;
+}
+
+.grassrock {
+    width: 15vw;
+    height: 15vw;
+}
+
+.fountain {
+    width: 25vw;
+    height: 25vw;
+}
+
+.people {
+    width: 15vw;
+    height: 15vw;
+}
+
+.bench {
+    width: 25vw;
+    height: 25vw;
+}
+
+.playground {
+    width: 30vw;
+    height: 30vw;
+}

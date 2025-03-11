@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
+        <title> bird locator </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <!-- goal: scrambled birds on page! uses <a> to jump to each bird. -->
+    <!-- future plans : make bird position random using js and add bird cage -->
+
+    <body>
+
+        <div class = "main-container">
+
+            <div class = "header">
+
+                <div class = "title-container">
+                    <h2> wheredidtheburdsgo </h2>
+                    <h2> wheredidtheburdsgo </h2>
+                    <h2> wheredidtheburdsgo </h2>
+                </div>
+                
+                <div class = "subtitle-container">
+                    <img draggable = "false" src = "assets/portrait.png" class = "portrait">
+                    <div class = "subtitle-text">
+                        <h4> minicupid </h4>
+                        <h3> my birds are scattered throughout the park. help me find them! they're very tiny, so i left some suggestions on where to look in the notebook. </h3>
+                    </div>
+                </div>
+
+                <div class = "landing"> 
+                    <img draggable = "false" src = "assets/playground.gif" class = "playground-gif">
+                    <p id="enter-button"> enter park </p>
+                </div>
+
+            </div>
+
+
+            <div class = "assist" id="assist">
+        
+                <p2> it is recommended to search using the notebook first. </p2>
+                <p> for extra help, the tool is a device that directs you to the radius of the burd selected. use with caution as prolonged use may cause excessive boredom. </p>
+                
+                <div class="finder-container">
+                    <select name="burd" id="burd">
+                        <option name="none"> use tool on [ select ] bird </option>
+                        <option name="blueberry"> blueberry </option>
+                        <option name="mango"> goldie </option>
+                        <option name="cotton"> cotton </option>
+                        <option name="maui"> maui </option>
+                    </select>
+                    <div class="goto-button">
+                        <button id="goto-button">→</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class = "park" id = "park">
+
+                <div class = "empty">
+                </div>
+
+                <div class = "s1">
+                    <img draggable = "false" src = "assets/people.png" class = "people">
+                    <img draggable = "false" src = "assets/bench.png" class = "bench">
+                    <img draggable = "false" src = "assets/tree.png" class = "tree">
+                </div>
+
+                <div class = "empty">
+                </div>
+
+                <div class = "s2">
+                    <img draggable = "false" src = "assets/tree.png" class = "tree">
+
+                    <div class = "burd-container">
+                        <img draggable = "false" src = "assets/blueberry.gif" class = "burd" name = "blueberry">
+                    </div>
+
+                    <div class = "swingset-container">
+                        <img draggable = "false" src = "assets/swingset.png" class = "swingset">
+                    </div>
+                </div>
+
+                <div class = "empty">
+                </div>
+
+                <div class = "empty">
+                </div>
+
+                <div class = "s3">
+                    <img draggable = "false" src = "assets/tree.png" class = "tree">
+                    <img draggable = "false" src = "assets/flowerpatch1.png" class = "flowerpatch">
+                    <img draggable = "false" src = "assets/playground.png" class = "playground">
+                </div>
+
+                <div class = "empty">
+                </div>
+
+                <div class = "s4">
+                    <img draggable = "false" src = "assets/fountain.png" class = "fountain">
+                    <img draggable = "false" src = "assets/grassrock.png" class="grassrock">
+                </div>
+
+                <div class = "empty">
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
